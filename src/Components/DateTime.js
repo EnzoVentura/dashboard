@@ -12,7 +12,7 @@ export const DateTime = () => {
   }, []);
 
   return (
-    <div className="border-l-2 border-r-2 w-1/4 text-gray-300 flex flex-col items-center p-2">
+    <div className="text-center">
       <div className="text-7xl">
         { dateState.toLocaleString('en-US', {
           hour : 'numeric',
