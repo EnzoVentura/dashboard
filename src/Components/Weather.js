@@ -22,15 +22,15 @@ export const Weather = () => {
     <div className="p-4">
       <div className="flex items-center">
 
-        <div className="w-1/2 flex flex-col items-center text-5xl font-medium ">
+        <div className="w-1/2 flex flex-col items-center text-xl md:text-3xl lg:text-5xl font-medium ">
           { weatherData?.current?.temp_c }°C
-          <div className="text-2xl">
+          <div className="text-sm md:text-lg lg:text-2xl">
             { weatherData?.location?.name }
           </div>
         </div>
 
         <div className="w-1/2 flex justify-center">
-
+          <img src={weatherData?.current?.condition?.icon} alt='forecast' className="grayscale "/>
         </div>
 
       </div>
